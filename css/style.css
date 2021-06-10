@@ -57,7 +57,7 @@ body {
 }
 
 .container{
-  width: 960px;
+  max-width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 4rem 1rem;
@@ -104,6 +104,39 @@ footer p{
 
 @media(max-width: 560px){
   .header::after{
-    height: 50vp;
+    height: 50vh;
+    
+  }
+  
+  .header-content{
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .header-content .logo{
+    height: 140px;
+    width: 140px;
+  }
+
+  .header-content .text{
+    display: none;
+  }
+
+  .grid-2, .grid-3{
+    grid-template-columns: 1fr;
+  }
+
+  .services{
+    padding: 1rem 1rem;
+  }
+}
+
+@media(max-height: 500px){
+  .header-content .text{
+    display: none;
+  }
+
+  .header-content{
+    top: 0;
   }
 }
